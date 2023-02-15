@@ -1,0 +1,205 @@
+body {
+    background-color: #F9FAFB;
+}
+
+h1 {
+    text-align: left;
+    color: #727272;
+}
+
+h2 {
+    text-align: left;
+    color: #727272;
+}
+
+.logout {
+    float: right;
+    padding: 5px;
+}
+
+.header {
+    margin: auto;
+    width: 50%;
+}
+
+.logo {
+    display: block;
+    width: 300px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.topnav {
+    background-color: #759CC9;
+    overflow: hidden;
+    height: 40px;
+}
+
+.topnav button {
+    float: right;
+    background-color: #759CC9;
+    border: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 3px;
+}
+
+.topnav button:hover {
+    background-color: #666;
+    color: #AEAEAE;
+}
+
+/* The side navigation menu */
+.sidenav {
+    width: 0%;
+    /* 0 width - change this with JavaScript */
+    height: 100%;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0%;
+    left: 0;
+    background-color: #759CC9;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 30px;
+    /* Place content 60px from the top */
+    transition: 0.25s;
+    /* transition effect to slide in the sidenav */
+    white-space: nowrap;
+    /* Prevent text from lne breaking */
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #F9FAFB;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #818181;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.sidebarOpenBtn {
+    color: #F9FAFB;
+    top: 0px;
+    font-size: 16px;
+    position: absolute;
+    padding: 8px;
+    background-color: #759CC9;
+    width: 150px;
+    height: 23px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sidebarOpenBtn:hover {
+    background-color: #666;
+}
+
+/* graphs */
+.buttonRow {
+    background-color: #F9FAFB;
+    /* Green background */
+    border: none;
+    /* Green border */
+    color: white;
+    /* White text */
+    padding: 10px 24px;
+    /* Some padding */
+    float: left;
+    /* Float the buttons side by side */
+    margin-bottom: 0px;
+    z-index: 1;
+    height: 20px;
+    width: 100%;
+}
+
+.buttonRow:after {
+    content: "";
+    clear: both;
+}
+
+.buttonRow-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+.graphGenerateButton {
+    color: #F9FAFB;
+    font-size: 12px;
+    border: 1px;
+    padding: 8px;
+    background-color: #8FB1CC;
+    border-radius: 5px;
+    width: 160px;
+    text-align: center;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.graphGenerateButton:hover {
+    background-color: #666;
+}
+
+/* main "background" plate */
+.main-page {
+    position: relative;
+    background-color: #F9FAFB;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+}
+
+/* draw area for each graph */
+.canvas-holder {
+    background-color: #F9FAFB;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    right: 8px;
+    bottom: 8px;
+    width: 66%;
+}
+
+#graphTitle {
+    text-align: center;
+    color: #727272;
+}
+
+#graphSubTitle {
+    text-align: left;
+    color: #727272;
+}
+
+.patientList {
+    margin-left: 500px;
+    z-index: 1;
+}

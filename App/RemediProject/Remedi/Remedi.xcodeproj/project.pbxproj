@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6931FAB5E57CC5E862D4E451 /* Pods_Remedi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0F0C2E7A52261F2DDC368C /* Pods_Remedi.framework */; };
+		6A40A75F237D528800751D63 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40A75E237D528800751D63 /* ExerciseDetailViewController.swift */; };
+		6AD8A48B237B6D320013AB2B /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8A48A237B6D320013AB2B /* ExerciseViewController.swift */; };
+		6AD8A48D237B6F8F0013AB2B /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8A48C237B6F8F0013AB2B /* ExerciseTableViewCell.swift */; };
+		F70913AA238C9E3900D9060B /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70913A9238C9E3900D9060B /* ChartsViewController.swift */; };
+		F70913AC238D1CC200D9060B /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70913AB238D1CC200D9060B /* GraphsViewController.swift */; };
+		F72A59752382C8270013DB0D /* MedicationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A59732382C8260013DB0D /* MedicationDetailTableViewCell.swift */; };
+		F72A59762382C8270013DB0D /* MedicationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A59742382C8270013DB0D /* MedicationDetailViewController.swift */; };
+		F72A59782382C82E0013DB0D /* MedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A59772382C82E0013DB0D /* MedicationViewController.swift */; };
+		F72A597B2382C9BA0013DB0D /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A597A2382C9BA0013DB0D /* Medicine.swift */; };
+		F72A597D238341AF0013DB0D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A597C238341AF0013DB0D /* Exercise.swift */; };
+		F72A97682392FD0900CA546D /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A97672392FD0900CA546D /* ReminderTableViewController.swift */; };
+		F72A976C239304CF00CA546D /* Pill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A976B239304CF00CA546D /* Pill.swift */; };
+		F72A976E2393058600CA546D /* PillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A976D2393058600CA546D /* PillCell.swift */; };
+		F72A97702393083500CA546D /* NewPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A976F2393083500CA546D /* NewPill.swift */; };
+		F761823E2367F4820050FCA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761823D2367F4820050FCA8 /* AppDelegate.swift */; };
+		F76182402367F4820050FCA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761823F2367F4820050FCA8 /* SceneDelegate.swift */; };
+		F76182422367F4820050FCA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76182412367F4820050FCA8 /* ViewController.swift */; };
+		F76182452367F4820050FCA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76182432367F4820050FCA8 /* Main.storyboard */; };
+		F76182472367F4850050FCA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76182462367F4850050FCA8 /* Assets.xcassets */; };
+		F761824A2367F4850050FCA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76182482367F4850050FCA8 /* LaunchScreen.storyboard */; };
+		F76182522367F4C60050FCA8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76182512367F4C60050FCA8 /* SignUpViewController.swift */; };
+		F76182542367F4D20050FCA8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76182532367F4D20050FCA8 /* LogInViewController.swift */; };
+		F76182562367F4E10050FCA8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76182552367F4E10050FCA8 /* HomeViewController.swift */; };
+		F7618259236807E90050FCA8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7618258236807E90050FCA8 /* Utilities.swift */; };
+		F761825C236839EC0050FCA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F761825B236839EC0050FCA8 /* GoogleService-Info.plist */; };
+		F77E32BF236E5A0E00459B4D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E32BE236E5A0E00459B4D /* ProfileViewController.swift */; };
+		F7BC706F236850390078E9DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC706E236850390078E9DB /* Constants.swift */; };
+		F7F6FCB22393EF3200061E66 /* NextScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6FCAF2393EF3200061E66 /* NextScheduleTableViewCell.swift */; };
+		F7F6FCB32393EF3200061E66 /* NextScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6FCB02393EF3200061E66 /* NextScheduleViewController.swift */; };
+		F7F6FCB42393EF3200061E66 /* NextScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6FCB12393EF3200061E66 /* NextScheduleDetailViewController.swift */; };
+		F7F6FCB72393EFA100061E66 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6FCB52393EFA100061E66 /* DateCollectionViewCell.swift */; };
+		F7F6FCB82393EFA100061E66 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6FCB62393EFA100061E66 /* CalendarVars.swift */; };
+		F7F6FCBA2393EFF200061E66 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6FCB92393EFF200061E66 /* ScheduleViewController.swift */; };
+		F7F76B0E238BF07C0021295D /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F76B0D238BF07C0021295D /* OverviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A40A75E237D528800751D63 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		6AD8A48A237B6D320013AB2B /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		6AD8A48C237B6F8F0013AB2B /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		70A52CCCA3D7A8152FD228C1 /* Pods-Remedi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remedi.release.xcconfig"; path = "Target Support Files/Pods-Remedi/Pods-Remedi.release.xcconfig"; sourceTree = "<group>"; };
+		79AE35AFCD6818BAECDC601E /* Pods-Remedi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remedi.debug.xcconfig"; path = "Target Support Files/Pods-Remedi/Pods-Remedi.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0F0C2E7A52261F2DDC368C /* Pods_Remedi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remedi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70913A9238C9E3900D9060B /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		F70913AB238D1CC200D9060B /* GraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
+		F72A59732382C8260013DB0D /* MedicationDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDetailTableViewCell.swift; sourceTree = "<group>"; };
+		F72A59742382C8270013DB0D /* MedicationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationDetailViewController.swift; sourceTree = "<group>"; };
+		F72A59772382C82E0013DB0D /* MedicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationViewController.swift; sourceTree = "<group>"; };
+		F72A597A2382C9BA0013DB0D /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		F72A597C238341AF0013DB0D /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		F72A97672392FD0900CA546D /* ReminderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		F72A976B239304CF00CA546D /* Pill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pill.swift; sourceTree = "<group>"; };
+		F72A976D2393058600CA546D /* PillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillCell.swift; sourceTree = "<group>"; };
+		F72A976F2393083500CA546D /* NewPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPill.swift; sourceTree = "<group>"; };
+		F761823A2367F4820050FCA8 /* Remedi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remedi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F761823D2367F4820050FCA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F761823F2367F4820050FCA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F76182412367F4820050FCA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F76182442367F4820050FCA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76182462367F4850050FCA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76182492367F4850050FCA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76182512367F4C60050FCA8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F76182532367F4D20050FCA8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F76182552367F4E10050FCA8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F7618258236807E90050FCA8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F761825B236839EC0050FCA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F77E32BE236E5A0E00459B4D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		F7BC706E236850390078E9DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F7F6FCAF2393EF3200061E66 /* NextScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		F7F6FCB02393EF3200061E66 /* NextScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextScheduleViewController.swift; sourceTree = "<group>"; };
+		F7F6FCB12393EF3200061E66 /* NextScheduleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextScheduleDetailViewController.swift; sourceTree = "<group>"; };
+		F7F6FCB52393EFA100061E66 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7F6FCB62393EFA100061E66 /* CalendarVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		F7F6FCB92393EFF200061E66 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		F7F76B0D238BF07C0021295D /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76182372367F4810050FCA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6931FAB5E57CC5E862D4E451 /* Pods_Remedi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E225EA04AF00475071AD613 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79AE35AFCD6818BAECDC601E /* Pods-Remedi.debug.xcconfig */,
+				70A52CCCA3D7A8152FD228C1 /* Pods-Remedi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6EAB59AABDA09C805923B47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0F0C2E7A52261F2DDC368C /* Pods_Remedi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F72A59792382C9AC0013DB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F72A597A2382C9BA0013DB0D /* Medicine.swift */,
+				F72A597C238341AF0013DB0D /* Exercise.swift */,
+				F72A976D2393058600CA546D /* PillCell.swift */,
+				F72A976F2393083500CA546D /* NewPill.swift */,
+				F72A976B239304CF00CA546D /* Pill.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F76182312367F4810050FCA8 = {
+			isa = PBXGroup;
+			children = (
+				F761823C2367F4820050FCA8 /* Remedi */,
+				F761823B2367F4820050FCA8 /* Products */,
+				1E225EA04AF00475071AD613 /* Pods */,
+				F6EAB59AABDA09C805923B47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F761823B2367F4820050FCA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F761823A2367F4820050FCA8 /* Remedi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F761823C2367F4820050FCA8 /* Remedi */ = {
+			isa = PBXGroup;
+			children = (
+				F72A59792382C9AC0013DB0D /* Model */,
+				F761825A236807FB0050FCA8 /* Helpes */,
+				F76182572367F4E60050FCA8 /* View Controllers */,
+				F761823D2367F4820050FCA8 /* AppDelegate.swift */,
+				F761823F2367F4820050FCA8 /* SceneDelegate.swift */,
+				F76182432367F4820050FCA8 /* Main.storyboard */,
+				F76182462367F4850050FCA8 /* Assets.xcassets */,
+				F76182482367F4850050FCA8 /* LaunchScreen.storyboard */,
+				F761825B236839EC0050FCA8 /* GoogleService-Info.plist */,
+			);
+			path = Remedi;
+			sourceTree = "<group>";
+		};
+		F76182572367F4E60050FCA8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F76182552367F4E10050FCA8 /* HomeViewController.swift */,
+				F76182532367F4D20050FCA8 /* LogInViewController.swift */,
+				F76182412367F4820050FCA8 /* ViewController.swift */,
+				F76182512367F4C60050FCA8 /* SignUpViewController.swift */,
+				F77E32BE236E5A0E00459B4D /* ProfileViewController.swift */,
+				F72A59772382C82E0013DB0D /* MedicationViewController.swift */,
+				F72A59732382C8260013DB0D /* MedicationDetailTableViewCell.swift */,
+				F72A59742382C8270013DB0D /* MedicationDetailViewController.swift */,
+				6AD8A48A237B6D320013AB2B /* ExerciseViewController.swift */,
+				6AD8A48C237B6F8F0013AB2B /* ExerciseTableViewCell.swift */,
+				6A40A75E237D528800751D63 /* ExerciseDetailViewController.swift */,
+				F7F76B0D238BF07C0021295D /* OverviewViewController.swift */,
+				F70913A9238C9E3900D9060B /* ChartsViewController.swift */,
+				F70913AB238D1CC200D9060B /* GraphsViewController.swift */,
+				F72A97672392FD0900CA546D /* ReminderTableViewController.swift */,
+				F7F6FCB92393EFF200061E66 /* ScheduleViewController.swift */,
+				F7F6FCB52393EFA100061E66 /* DateCollectionViewCell.swift */,
+				F7F6FCB62393EFA100061E66 /* CalendarVars.swift */,
+				F7F6FCB12393EF3200061E66 /* NextScheduleDetailViewController.swift */,
+				F7F6FCAF2393EF3200061E66 /* NextScheduleTableViewCell.swift */,
+				F7F6FCB02393EF3200061E66 /* NextScheduleViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F761825A236807FB0050FCA8 /* Helpes */ = {
+			isa = PBXGroup;
+			children = (
+				F7618258236807E90050FCA8 /* Utilities.swift */,
+				F7BC706E236850390078E9DB /* Constants.swift */,
+			);
+			path = Helpes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76182392367F4810050FCA8 /* Remedi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F761824E2367F4850050FCA8 /* Build configuration list for PBXNativeTarget "Remedi" */;
+			buildPhases = (
+				735951646BD0BA11B56D1D98 /* [CP] Check Pods Manifest.lock */,
+				F76182362367F4810050FCA8 /* Sources */,
+				F76182372367F4810050FCA8 /* Frameworks */,
+				F76182382367F4810050FCA8 /* Resources */,
+				0364EB51D9A2659F0AC0CBE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Remedi;
+			productName = Remedi;
+			productReference = F761823A2367F4820050FCA8 /* Remedi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76182322367F4810050FCA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Krystal Nguyen";
+				TargetAttributes = {
+					F76182392367F4810050FCA8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = F76182352367F4810050FCA8 /* Build configuration list for PBXProject "Remedi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76182312367F4810050FCA8;
+			productRefGroup = F761823B2367F4820050FCA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76182392367F4810050FCA8 /* Remedi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76182382367F4810050FCA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F761824A2367F4850050FCA8 /* LaunchScreen.storyboard in Resources */,
+				F761825C236839EC0050FCA8 /* GoogleService-Info.plist in Resources */,
+				F76182472367F4850050FCA8 /* Assets.xcassets in Resources */,
+				F76182452367F4820050FCA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0364EB51D9A2659F0AC0CBE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remedi/Pods-Remedi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remedi/Pods-Remedi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Remedi/Pods-Remedi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		735951646BD0BA11B56D1D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remedi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76182362367F4810050FCA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72A976C239304CF00CA546D /* Pill.swift in Sources */,
+				F70913AA238C9E3900D9060B /* ChartsViewController.swift in Sources */,
+				F72A59752382C8270013DB0D /* MedicationDetailTableViewCell.swift in Sources */,
+				F76182422367F4820050FCA8 /* ViewController.swift in Sources */,
+				F72A59762382C8270013DB0D /* MedicationDetailViewController.swift in Sources */,
+				F761823E2367F4820050FCA8 /* AppDelegate.swift in Sources */,
+				6AD8A48D237B6F8F0013AB2B /* ExerciseTableViewCell.swift in Sources */,
+				F77E32BF236E5A0E00459B4D /* ProfileViewController.swift in Sources */,
+				F7618259236807E90050FCA8 /* Utilities.swift in Sources */,
+				F72A976E2393058600CA546D /* PillCell.swift in Sources */,
+				F72A97682392FD0900CA546D /* ReminderTableViewController.swift in Sources */,
+				F72A597B2382C9BA0013DB0D /* Medicine.swift in Sources */,
+				F7F6FCB32393EF3200061E66 /* NextScheduleViewController.swift in Sources */,
+				F7F6FCB82393EFA100061E66 /* CalendarVars.swift in Sources */,
+				F7F6FCB42393EF3200061E66 /* NextScheduleDetailViewController.swift in Sources */,
+				F7F6FCBA2393EFF200061E66 /* ScheduleViewController.swift in Sources */,
+				F76182522367F4C60050FCA8 /* SignUpViewController.swift in Sources */,
+				F76182542367F4D20050FCA8 /* LogInViewController.swift in Sources */,
+				6AD8A48B237B6D320013AB2B /* ExerciseViewController.swift in Sources */,
+				F7F76B0E238BF07C0021295D /* OverviewViewController.swift in Sources */,
+				F72A597D238341AF0013DB0D /* Exercise.swift in Sources */,
+				F7F6FCB22393EF3200061E66 /* NextScheduleTableViewCell.swift in Sources */,
+				F7F6FCB72393EFA100061E66 /* DateCollectionViewCell.swift in Sources */,
+				F76182402367F4820050FCA8 /* SceneDelegate.swift in Sources */,
+				F76182562367F4E10050FCA8 /* HomeViewController.swift in Sources */,
+				F72A97702393083500CA546D /* NewPill.swift in Sources */,
+				F72A59782382C82E0013DB0D /* MedicationViewController.swift in Sources */,
+				F70913AC238D1CC200D9060B /* GraphsViewController.swift in Sources */,
+				F7BC706F236850390078E9DB /* Constants.swift in Sources */,
+				6A40A75F237D528800751D63 /* ExerciseDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F76182432367F4820050FCA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76182442367F4820050FCA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F76182482367F4850050FCA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76182492367F4850050FCA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F761824C2367F4850050FCA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F761824D2367F4850050FCA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F761824F2367F4850050FCA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AE35AFCD6818BAECDC601E /* Pods-Remedi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Remedi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithKrystal.Remedi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F76182502367F4850050FCA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A52CCCA3D7A8152FD228C1 /* Pods-Remedi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Remedi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithKrystal.Remedi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76182352367F4810050FCA8 /* Build configuration list for PBXProject "Remedi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F761824C2367F4850050FCA8 /* Debug */,
+				F761824D2367F4850050FCA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F761824E2367F4850050FCA8 /* Build configuration list for PBXNativeTarget "Remedi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F761824F2367F4850050FCA8 /* Debug */,
+				F76182502367F4850050FCA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F76182322367F4810050FCA8 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Remedi {
+  umbrella header "Pods-Remedi-umbrella.h"
+
+  export *
+  module * { export * }
+}

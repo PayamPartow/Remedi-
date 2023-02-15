@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Joseph Dillman, adapted from Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("crossfit-dumbbell-equipment-669578.jpg");
+            background-size:cover; 
+            background-position:center center; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-login">
+        <div id="title">
+            <img src="/Logo2.png" alt="Logo" style="width:300px;height:120px;margin:auto;"/>  
+            <div style="margin-top:-30px;margin-bottom: -30px;">
+                <figcaption><p class="material-icons lock">lock</p> Login </figcaption>
+            </div>              
+        </div>
+
+        <!-- Login and submit form -->
+        <form action="javascript:login()">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">email</i>
+                </div>
+                <input id="username" placeholder="Email" type="email" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+            </div>
+            <div>
+                <div id="badLogin" style="color: #ff8080; font-size: 12pt; padding-top: 7px; padding-bottom: 2px;">
+                </div>
+            </div>
+            <div class="submit">
+                <input style="color: #F9FAFB;" type="submit" value="Log in">
+            </div>
+        </form>
+        <!--
+        <div class="forgot-password" style="padding-top: 7px;">
+            <a href="https://i.giphy.com/media/12msOFU8oL1eww/giphy.mp4" target="_blank">Forgot your password?</a>
+        </div>
+        -->
+        <div class="register">
+            Don't have an account yet?
+            <a href="register.html"><button style="color: #F9FAFB; background-color: #8FB1CC;" id="register-link">Register here</button></a>
+        </div>
+        <div class="privacy" style="margin-top:50px;">
+            <a href="https://www.privacypolicies.com/generic/" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- Include Firebase packages -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script>
+    // Firebase config
+    var firebaseConfig = {
+        apiKey: "AIzaSyB09Qix1d7VyxyS7mze7wc5-a2fnbGJCD8",
+        authDomain: "remedi2.firebaseapp.com",
+        databaseURL: "https://remedi2.firebaseio.com",
+        projectId: "remedi2",
+        storageBucket: "remedi2.appspot.com",
+        messagingSenderId: "253235968752",
+        appId: "1:253235968752:web:46cd5dc2656d69556a2035",
+        measurementId: "G-KVERK2KVV7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

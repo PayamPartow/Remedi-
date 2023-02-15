@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "623F46C3-57F5-406A-8C84-E312716FCFCC"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7830109E-6197-456D-BDBD-E81BAC4EACF8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Remedi/View Controllers/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "gobackTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Remedi/View Controllers/LogInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LogInViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729 - e3fbbd02f802e90a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.LogInViewController.loginButton.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi/Remedi/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729 - 9b1c742a40977906"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.LogInViewController.loginButton.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi/Remedi/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729 - 98dbafc458357537"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.LogInViewController.loginButton.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi/Remedi/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729 - b3d5882301cc34c2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.LogInViewController.loginButton.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi/Remedi/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729 - ee05bc79777e5a9a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.LogInViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Remedi.LogInViewController"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi/Remedi/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "375">
+               </Location>
+               <Location
+                  uuid = "5C356C77-F891-4093-BCA3-CCE71DF2E729 - 1ac79ca84c3fa22f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.LogInViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Remedi.LogInViewController&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi/Remedi/View%20Controllers/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "313">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Remedi/View Controllers/ExerciseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "ExerciseViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D - c3bce5aa44a01beb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.ExerciseViewController.exerciseTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi%20Project/Remedi/Remedi/View%20Controllers/ExerciseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D - be108c32d26237d7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.ExerciseViewController.exerciseTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi%20Project/Remedi/Remedi/View%20Controllers/ExerciseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D - 6fb9edc3fe947ee6"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.ExerciseViewController.exerciseTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi%20Project/Remedi/Remedi/View%20Controllers/ExerciseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D - 95637998ab0bd912"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.ExerciseViewController.exerciseTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi%20Project/Remedi/Remedi/View%20Controllers/ExerciseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D - dba78c26ece64fdb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.ExerciseViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Remedi.ExerciseViewController"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi%20Project/Remedi/Remedi/View%20Controllers/ExerciseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1429">
+               </Location>
+               <Location
+                  uuid = "889623BC-325D-4111-80E0-379FE0DE9E0D - c73e2fc573c2d31f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Remedi.ExerciseViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Remedi.ExerciseViewController&gt;"
+                  moduleName = "Remedi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ngannguyen/cmpt275_fa2019_team8/Remedi%20Project/Remedi/Remedi/View%20Controllers/ExerciseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1362">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04E1D54B-6C91-4309-A9F1-4094077E9182"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Remedi/View Controllers/ReminderTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "unwindToMain(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

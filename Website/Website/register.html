@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Joseph Dillman, adapted from Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("crossfit-dumbbell-equipment-669578.jpg");
+            background-size:cover; 
+            background-position:center center; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-register" style="height:700px;top:5%">
+        <div id="title">
+            <img src="/Logo2.png" alt="Logo" style="width:300px;height:120px;margin:auto;"/>  
+            <div style="margin-top:-30px;margin-bottom: -30px;">
+                <figcaption><p class="material-icons lock">lock</p> Register </figcaption>
+            </div>              
+        </div>
+        
+        <!-- Main registration submit form-->
+        <form id="register-form">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="firstName" placeholder="First Name" type="text" required class="validate" autocomplete="off">
+            </div>
+        
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="lastName" placeholder="Last Name" type="text" required class="validate" autocomplete="off">
+            </div>
+    
+            <div class="clearfix"></div>
+            
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">phone</i>
+                </div>
+                <input id="phone" placeholder="Phone # (ex: 604-321-8069)" type="text" required class="validate" autocomplete="off">
+            </div>
+    
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">house</i>
+                </div>
+                <input id="address" placeholder="Work Address" type="text" required class="validate" autocomplete="off">
+            </div>
+        
+            <div class="clearfix"></div>
+                
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">email</i>
+                </div>
+                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+            </div>
+
+            <!-- Don't show for now 
+            <div class="remember-me" style="display: none;">
+                <input type="checkbox" required>
+                <span style="color: #DDD">I accept Terms of Service</span>
+            </div>
+            -->
+            <input type="submit" style="margin-top:20px; color: #F9FAFB;" value="Register">
+        </form>
+        <div class="register">
+            Do you already have an account?
+            <a href="login.html"><button id="register-link">Log in here</button></a>
+        </div>
+        <div class="privacy">
+            <a href="https://www.privacypolicies.com/generic/" target="_blank">Privacy Policy</a>
+        </div>
+        
+        <div id="alert" style="display: none;">
+            <span id="alertclosebtn" onclick="this.parentElement.style.display='none'">&times;</span>  
+            Success! Account registered.
+        </div>
+    </div>
+    
+
+    <!-- Firebase related libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <script>
+
+    // Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB09Qix1d7VyxyS7mze7wc5-a2fnbGJCD8",
+        authDomain: "remedi2.firebaseapp.com",
+        databaseURL: "https://remedi2.firebaseio.com",
+        projectId: "remedi2",
+        storageBucket: "remedi2.appspot.com",
+        messagingSenderId: "253235968752",
+        appId: "1:253235968752:web:46cd5dc2656d69556a2035",
+        measurementId: "G-KVERK2KVV7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

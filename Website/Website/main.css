@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+    color: #F9FAFB;
+}
+
+#container-login {
+    background-color: #F9FAFB;
+    position: relative;
+    top: 17%;
+    margin: auto;
+    width: 340px;
+    height: 500px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#container-register {
+    background-color: #F9FAFB;
+    position: relative;
+    top: 0;
+    margin: auto;
+    width: 340px;
+    height: 480px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+  
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+ 
+
+#title {
+    position: relative;
+    background-color: #F9FAFB;
+    color: #8FB1CC;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 0.35em;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lock {
+	position: relative;
+	top: 2px;
+}
+
+/* Input related css */
+.input {
+    margin: auto;
+    width: 85%;
+    border-radius: 4px;
+    background-color: #8FB1CC;
+    padding: 8px 0px;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+
+.input-addon {
+    float: left;
+    background-color: #8FB1CC;
+    border-radius: 4px;
+    padding: 4px 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* should get rid of up/down arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+}
+
+input[type=number]{
+    background-color: #8FB1CC;
+    color: #F9FAFB;
+    margin: 0;
+    border: 0;
+    padding: 6px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+/* should get rid of up/down arrows */
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+}
+
+input[type=date]{
+    background-color: #8FB1CC;
+    color: #F9FAFB;
+    margin: 0;
+    border: 0;
+    padding: 6px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+input[type=text] {
+    background-color: #8FB1CC;
+    color: #F9FAFB;
+    margin: 0;
+    border: 0;
+    padding: 6px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+::placeholder {
+    color: #F9FAFB;
+}
+
+
+input[type=password] {
+    background-color: #8FB1CC;
+    color: #F9FAFB;
+    margin: 0;
+    border: 0;
+    padding: 6px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+input[type=password]:focus {
+    border: 0px solid #373b3d;
+}
+
+input[type=email] {
+    background-color: #8FB1CC;
+    color: #F9FAFB;
+    margin: 0;
+    border: 0;
+    padding: 6px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+input[type=email]:focus {
+    border: 0px solid #373b3d;
+}
+
+input[type=submit] {
+    padding: 6px 25px;
+    background: #8FB1CC;
+    color: #F9FAFB;
+    font-weight: bold;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Forgot password and privacy elements*/
+.forgot-password {
+    position: relative;
+    bottom: 0%;
+}
+
+.forgot-password a:link {
+    color: #727272;
+    text-decoration: none;
+}
+
+.forgot-password a:visited {
+    color: #727272;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 1s;
+}
+
+.privacy {
+    color:#727272;
+    margin-top: 5px;
+    position: relative;
+    font-size: 12px;
+    bottom: 5px;
+}
+
+.privacy a:link {
+    color: #727272;
+    text-decoration: none;
+}
+
+.privacy a:visited {
+    color: #727272;
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 1s;
+}
+
+*:focus {
+    outline: none;
+}
+
+.remember-me {
+    margin: 10px 0;
+}
+
+.register {
+    color: #727272;    
+    margin: auto;
+    padding: 8px 0;
+    text-align: center;
+    margin-top: 10px;
+    width: 85%;
+    border-top: 1px solid #C1C3C6;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#register-link {
+    margin-top: 10px;
+    padding: 6px 25px;
+    background: #8FB1CC;
+    color: #F9FAFB;
+    font-weight: bold;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* "View" modal */
+.viewData {
+    text-align: left;
+    padding-left: 80px;
+    border-style: solid;
+    border-width: 3px 0px;
+    border-color: #8FB1CC;
+    border-spacing: 10px;
+}
+
+.viewData > div {
+    display: inline-block; 
+    vertical-align:top;
+}
+
+.medInput {
+    margin: auto;
+    margin-top: 14px;
+    border-radius: 4px;
+    background-color: #8FB1CC;
+    color: #000000;
+    padding-left: 6px;
+    max-width: 100px;
+}
+
+.medForm {
+    width: 100%;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.sentenceInput{
+    color:#a8a8a8;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.sentenceInput div,select{
+    display:inline-block;
+}
+
+select {
+    color: #636363;
+    background-color: #f9fafb;
+    margin: 0;
+    border: 0;
+}
+
+textarea {
+    background-color:#8FB1CC;
+    color: #F9FAFB;
+    margin: 0;
+    border: 0;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+/* AutoComplete, taken from w3schools */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    color: #727272;
+    font-size: 12pt;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+  
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+  
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: #759CC9 !important; 
+    color: #F9FAFB; 
+}
+
+#exMessage {
+    font-size: 10pt;
+    margin: 0;
+    padding-bottom: 5px;
+    display: none;
+}
+
+#medMessage {
+    font-size: 10pt;
+    margin: 0;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.delTask {
+    background: #FF6464; 
+    color: #F9FAFB;
+    font-size: 12pt;
+    font-weight: Semi-Bold;
+    font-family: 'Sarabun';
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    float: right;
+}
+
+ /* table style */
+ table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #727272;
+    padding: 8px;
+    background-color: rgb(228, 228, 228);
+    color: #727272;
+    font-size: 12pt;
+}
+
+.tHeader {
+    background-color: #759CC9;
+    color: #F9FAFB;
+}
+
+.smallerTable {
+    width: 340px;
+}
+
+.smallerTable td, th {
+    font-size: 10pt;
+}
+
+.smallerTableHeader {
+    font-size: 12pt !important;
+    background-color: #759CC9;
+    color: #F9FAFB;
+}
+   
+.mybtn {
+    background:#759CC9;
+    color: #F9FAFB;
+    font-size: 12pt;
+    font-weight: normal;
+    font-family: 'Sarabun';
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    min-width: 150px;
+    margin-right: 5px;
+}

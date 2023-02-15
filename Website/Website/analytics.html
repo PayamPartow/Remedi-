@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Remedi - Analytics</title>
+    <meta name="description" content="Analytics">
+    <meta name="author" content="Kevin Jerome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="modal.css">-->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="analytics.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+</head>
+
+<body>
+    <!-- Firebase related libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+    <script>
+        // Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB09Qix1d7VyxyS7mze7wc5-a2fnbGJCD8",
+            authDomain: "remedi2.firebaseapp.com",
+            databaseURL: "https://remedi2.firebaseio.com",
+            projectId: "remedi2",
+            storageBucket: "remedi2.appspot.com",
+            messagingSenderId: "253235968752",
+            appId: "1:253235968752:web:46cd5dc2656d69556a2035",
+            measurementId: "G-KVERK2KVV7"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="analytics.js"></script>
+    <script type="text/javascript" src="dash.js"></script>
+
+    <div>
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <button onclick="logout()" style="color: #F9FAFB"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+        </div>
+        <img class="logo" src="/Logo2.png" alt="Logo">
+        <div class="header">
+            <h1 style="text-align: center;">Patient Analytics</h1>
+        </div>
+
+        <!-- Sidnav bar -->
+        <div id="mySidenav" class="sidenav">
+            <hr style="margin-top: 150%">
+            </hr>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
+            <!-- class = "..." is an icon -->
+            <a href="dash.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+            <hr>
+            </hr>
+            <a href="analytics.html"><i class="fas fa-chart-line"></i> Patient Analytics</a>
+            <hr>
+            </hr>
+            <a href="javascript:void(0)" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+            <hr>
+            </hr>
+        </div>
+        <span class="sidebarOpenBtn" onclick="openNav()">Menu <i class="fas fa-bars" style="margin-left: 5px;"></i></span>
+    </div>
+    <div class="patientList">
+        <h2>Select a patient:</h2>
+        <input id="analyticInput" placeholder="Choose patient or type name and press enter." type="text" required class="input" list="listofpatients" autocomplete="off" spellcheck="false" style="width: 25%; padding-right: 10px;">
+        <datalist id="listofpatients"></datalist>
+        <div class="buttonRow">
+            <button class="graphGenerateButton" onclick="renderGraph(myChart)" style="margin-left: -25px; margin-top: 10px;">Generate Exercises Graph</button>
+        </div>
+    </div>
+    <div class="main-page" style="margin-top:55px;">
+        <script>
+            populatePatientList();
+        </script>
+
+        <div class="canvas-holder" style="padding-left: -150px;">
+            <h2 id="graphTitle">Please select a patient.</h2>
+            <h3 id="graphSubTitle" style="display:none;"></h2>
+            <canvas id="myChart" width="200" height="200" style="display:none"></canvas>
+            <script>
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: [],
+                            data: [],
+                            backgroundColor: [],
+                            borderColor: [],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        response: true,
+                        mainAspectRatio: false,
+                        scales: {
+                            xAxes: [{
+                                ticks: {
+                                    stepSize: 1,
+                                    beginAtZero: true,
+                                    autoSkip: false
+                                }
+                            }],
+                            yAxes: [{
+                                ticks: {
+                                    stepSize: 1,
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

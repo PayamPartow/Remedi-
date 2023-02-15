@@ -1,0 +1,31 @@
+Dear TA/marker,
+
+Please read the following instructions on how to compile and run our project:
+
+App: 
+Note: Our project requires XCode 11 to work.
+
+1. Unzip the 2019-3-CMPT275-Group-08_src.zip folder 
+2. Open XCode 11 
+3. Click "open existing project" and navigate into the "Remedi" folder.
+4. Open Remedi.xcworkspace
+(it is important that the Remedi.xcworkspace file is selected, not the Remedi.xcodeproj file)
+5. Change the "Development Target" to iOS 13.0
+6. Build using the iPhone 11 or iPhone 11 Pro Max simulator. 
+
+Credentials used for the iPhone app login:
+	username: payampartow@gmail.com	
+	password: password!             (including the exclamation point)
+
+---------------------------------------------------------------------
+(Note: we also have our website code in the .zip file, but this doesn't need
+to be locally hosted as we're already hosting the website.)
+
+To view the website, please visit: https://remedihost.firebaseapp.com
+on Google Chrome for the best viewing experience.
+
+Credentials used for the website:
+	email: jdillman@sfu.ca
+	password: password
+
+

@@ -1,0 +1,532 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Remedi - Home</title>
+    <meta name="description" content="Dash">
+    <meta name="author" content="Joseph Dillman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sarabun');
+        body {
+            background-color: #F9FAFB;
+        }
+
+        h1 {
+            text-align: left;
+            color: #727272;
+        }
+        h2 {
+            text-align: left;
+            color: #727272;
+            padding-left: 20px;
+        }
+
+        .badInputs {
+            color: #ff8080; 
+            font-family: 'Sarabun', sans-serif;
+            font-size: 10pt; 
+            padding-left: 30px;
+            padding: 7px 0;
+            margin: auto;
+            width: 240px;
+        }
+
+        .success {
+            color: #76cf53; 
+            font-size: 10pt; 
+            font-family: 'Sarabun', sans-serif;
+            padding: 7px 0;
+            padding-left: 30px;
+            margin: auto;
+            width: 240px;
+        }
+        .input {
+            padding: 10px;
+        }
+
+        .logout {
+            float: right;
+            padding: 5px;
+        }
+
+        .header {
+            margin: auto;
+            width: 50%;
+        }
+
+        .submit {
+            margin: auto;
+            width: 20%;
+            padding-top: 7px;
+        }
+
+
+        .patients {
+            width: 50%;
+            margin: auto;
+        }
+
+        /* buttons */
+        #delete-profile {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            margin-left: 15px;
+
+            height: 35px;
+            width: 95%;
+
+            background: #FF6464; 
+            color: #F9FAFB;
+            font-size: 12pt;
+            font-weight: Semi-Bold;
+            font-family: 'Sarabun';
+            border: 0 none;
+            cursor: pointer;
+            border-radius: 3px;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .logo {
+            display: block;
+            width: 300px;
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+
+        .topnav {
+            background-color:  #759CC9;
+            overflow: hidden;
+            height: 40px;
+        }
+
+        .topnav button {
+            float: right;
+            background-color: #759CC9;
+            border: 1px;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px 25px;
+            border-radius: 3px;
+        }
+
+        .topnav button:hover {
+            background-color: #666;
+            color: #AEAEAE;
+        }
+
+        /* The side navigation menu */
+        .sidenav {
+            width: 0%; /* 0 width - change this with JavaScript */
+            height: 100%;
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0%;
+            left: 0;
+            background-color:  #759CC9; 
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 30px; /* Place content 60px from the top */
+            transition: 0.25s; /* transition effect to slide in the sidenav */
+            white-space: nowrap; /* Prevent text from lne breaking */
+            padding-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #F9FAFB;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #818181;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+
+        .sidebarOpenBtn {
+            color: #F9FAFB;
+            top: 0px;
+            font-size: 16px;
+            position: absolute;
+            padding: 8px;
+            background-color: #759CC9;
+            width: 150px;
+            height: 23px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .sidebarOpenBtn:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <button onclick="logout()" style="color: #F9FAFB"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+        </div>
+        <img class="logo" src="/Logo2.png" alt="Logo"> 
+        <div class="header">
+            <h1 id="greet"></h1>
+        </div>
+
+         <!-- Sidnav bar -->
+        <div id="mySidenav" class="sidenav">
+            <hr style="margin-top: 150%"></hr>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
+             <!-- class = "..." is an icon -->
+            <a href="#" ><i class="fa fa-fw fa-home"></i> Dashboard</a>
+            <hr></hr>
+            <a href="analytics.html"><i class="fas fa-chart-line"></i> Patient Analytics</a>
+            <hr></hr>
+            <a href="javascript:void(0)" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+            <hr></hr>
+        </div>
+          
+        <span class="sidebarOpenBtn" onclick="openNav()">Menu <i class="fas fa-bars" style="margin-left: 5px;"></i></span>
+        
+        <!-- Display patients in table, allow for adding new ones-->
+        <div class="patients">
+            <h2 style="text-align: left; padding-left: 0px;">List of your current patients:</h2>
+            <table id="patientTable">
+                <!-- <tr>
+                    <td class="tHeader">First Name</td>
+                    <td class="tHeader">Last Name</td>
+                </tr> -->
+            </table>
+            <div style="padding-top: 20px;">
+                <button id="myBtn" class="mybtn">Add New Patient</button>
+            </div>
+        </div>
+
+        <!-- Modal dropdown to "view" data-->
+        <div id="myModalView" class="modal" style="padding-top:50px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" onclick="closeView();">&times;</span>
+                    <h2 style="color: #F9FAFB; padding-left: 10px;">View and Edit Patient Data</h2>
+                </div>
+                <h2> Patient Information</h2>
+                <div class="viewData">
+                    <div style="text-align: right; padding-right: 10px; color:#727272;">
+                        <p>Patient Name: </p>
+                        <p>Email Address: </p>
+                        <p>Date of Birth: </p>
+                        <p>Home Address: </p>
+                        <p>Phone Number: </p>
+                        <p>Gender: </p>
+                        <p>Health Care Number: </p>
+                        <p>Stage of Parkinsons: </p>
+                        <p>Notes: </p>
+                    </div>
+                    <div style="text-align: left; color:#727272;">
+                        <p id="Pname"></p>
+                        <p id="Pemail"></p>
+                        <p id="Pdob"></p>
+                        <p id="Paddress"></p>
+                        <p id="Pphone"></p>
+                        <p id="Pgender"></p>
+                        <p id="Phcn"></p>
+                        <p id="Pstage"></p>
+                        <p id="Pnotes"></p>
+                    </div>
+                </div>
+                <h2>Current Exercises and Medication</h2>
+                <p style="color: #727272;padding-left: 20px;">To edit a task, simply add a new task with the same name</p>
+                <div class="viewData">
+                    <br>
+                    <table id="exTable" class="smallerTable"></table>
+                    <br>
+                    <table id="medTable" class="smallerTable"></table>
+                    <br>
+                </div>
+                <h2>Add New Exercise</h2>
+                <form class="medForm" action="javascript:addEx()">
+                    <div class="viewData">
+                        <div style="text-align: right; padding-right: 10px; color:#727272">
+                            <p>
+                                <label>Name of Exercise:</label> 
+                            </p>
+                            <p>
+                                <label>Repitions/time per Set:</label>
+                            </p>
+                            <p>
+                                <label>Sets per Exercise:</label>
+                            </p>
+                            <p>
+                                <label>Instructions:</label>
+                            </p>
+                            <p style="padding-top:3px;">
+                                <label>Other Notes:</label>
+                            </p>
+                        </div>
+                        <div style="text-align: left; color:#F9FAFB;">
+                            <p class="medInput autocomplete">
+                                <input id="exName" placeholder="ex. Calf Raise" type="text" required autocomplete="off">
+                            </p>
+                            <p class="medInput">
+                                <input id="exReps" placeholder="ex. 10 Reps" type="text"autocomplete="off">
+                            </p>
+                            <p class="medInput">
+                                <input id="exSets" placeholder="ex. 3 Sets" type="text" autocomplete="off">
+                            </p>
+                            <p class="medInput">
+                                <textarea id="exInstructions" rows="2" cols="19" placeholder="ex. Lift heels as high as possible, hold for 2 seconds, repeat." autocomplete="off"></textarea>
+                            </p>
+                            <p class="medInput">
+                                <textarea id="exNotes" rows="2" cols="19" placeholder="ex. Use chair for balance" autocomplete="off"></textarea>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="sentenceInput">
+                            <label style = "color: #727272;">The patient is to perform exercise</label> 
+                            <select id="exTimes" required>
+                                <option value = "1">one</option>
+                                <option value = "2">two</option>
+                                <option value = "3">three</option>
+                                <option value = "4">four</option>
+                                <option value = "5">five</option>
+                                <option value = "6">six</option>
+                                <option value = "7">seven</option>
+                                <option value = "8">eight</option>
+                                <option value = "9">nine</option>
+                                <option value = "10">ten</option>
+                                <option value = "11">eleven</option>
+                                <option value = "12">twelve</option>
+                                <option value = "13">thirteen</option>
+                                <option value = "14">fourteen</option>
+                                <option value = "15">fifteen</option>
+                            </select>
+                            <label style = "color: #727272;">time(s)</label> 
+                            <select id="exFreq" required>
+                                <option value = "daily">daily</option>
+                                <option value = "weekly">weekly</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="submit">
+                            <input id="mybtn" class="mybtn" type="submit" value="Submit"  style="font-size:10pt;margin-bottom:10px">
+                        </div>
+                        <p id="exMessage"></p>
+                    </div>
+                </form>
+                <h2>Add New Medication</h2>
+                <form class="medForm" action="javascript:addMed()">
+                    <div class="viewData">
+                        <div style="text-align: right; padding-right: 10px; color:#727272">
+                            <p>
+                                <label>Name of Medication:</label> 
+                            </p>
+                            <p>
+                                <label>Dosage Notes:</label>
+                            </p>
+                            <p>
+                                <label>Size of Dosage:</label>
+                            </p>
+                            <p>
+                                <label>Number of daily doses (days):</label>
+                            </p>
+                            <p>
+                                <label>Instructions:</label>
+                            </p>
+                            <p style="padding-top:5px;">
+                                <label >Other Notes:</label>
+                            </p>
+                        </div>
+                        <div style="text-align: left; color:#F9FAFB;">
+                            <p class="medInput autocomplete">
+                                <input id="medName" placeholder="ex. Advil" type="text" required>
+                            </p>
+                            <p class="medInput">
+                                <input id="doseNotes" placeholder="ex. 2 caplets" type="text">
+                            </p>
+                            <p class="medInput">
+                                <input id="doseSize" placeholder="ex. 200mg" type="text">
+                            </p>
+                            <p class="medInput">
+                                <input id="medSize" placeholder="ex. 60" type="number">
+                            </p>
+                            <p class="medInput">
+                                <textarea id="medInstructions" rows="2" cols="19" placeholder="ex. Consume 2 pills"></textarea>
+                            </p>
+                            <p class="medInput">
+                                <textarea id="medNotes" rows="2" cols="19" placeholder="ex. Do not consume with high amounts of alcohol"></textarea>
+                            </p>
+                        </div>
+                        <br>
+                        <div class="sentenceInput" style="margin-bottom:-10px;">
+                            <label style = "color: #727272;">Time preference: </label>
+                            <select id="timePref">
+                                <option value = "morning">Morning</option>
+                                <option value = "evening">Evening</option>
+                            </select>
+                        </div>
+                        <div class="sentenceInput">
+                            <label style = "color: #727272;">The patient is to consume</label> 
+                            <select id="medTimes" required>
+                                <option value = "1">one</option>
+                                <option value = "2">two</option>
+                                <option value = "3">three</option>
+                                <option value = "4">four</option>
+                                <option value = "5">five</option>
+                                <option value = "6">six</option>
+                                <option value = "7">seven</option>
+                                <option value = "8">eight</option>
+                                <option value = "9">nine</option>
+                                <option value = "10">ten</option>
+                                <option value = "11">eleven</option>
+                                <option value = "12">twelve</option>
+                                <option value = "13">thirteen</option>
+                                <option value = "14">fourteen</option>
+                                <option value = "15">fifteen</option>
+                            </select>
+                            <label style = "color: #727272;">time(s)</label> 
+                            <select id="medFreq" required>
+                                <option value = "daily">daily</option>
+                                <option value = "weekly">weekly</option>
+                                <option value = "monthly">monthly</option>
+                            </select>
+                        </div>
+                        <br >
+                        <div class="submit">
+                            <input id="mybtn" class="mybtn" type="submit" value="Submit" style="font-size:10pt;margin-bottom:10px">
+                        </div>
+                        <p id="medMessage"></p>
+                    </div>
+                      <button id="delete-profile" onclick="delPatient()">Delete Patient</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal dropdown form to "add" new patients-->
+        <div id="myModal" class="modal" style="padding-top:50px;">
+          <div class="modal-content" style="width:500px;">
+            <div class="modal-header">
+              <span id="closeAdd" class="close">&times;</span>
+              <h2 style="color: #F9FAFB;">Add New Patient</h2>
+            </div>
+
+            <!-- Form containing fields and submit button -->
+            <form action="javascript:addPatient()">
+                <div class="input">
+                    <i class="fas fa-user-circle"></i> <input id="patientFirstName" placeholder="First Name" type="text" required class="input" autocomplete="off"
+                    pattern="^[a-zA-Z ,.'-]+$" required title="Letters and joining symbols only: e.g. Chris, K'Andre, Bob">
+                </div>
+                <div class="input">
+                    <i class="fas fa-user-circle"></i> <input id="patientLastName" placeholder="Last Name" type="text" required class="input" autocomplete="off"
+                    pattern="^[a-zA-Z ,.'-]+$" required title="Letters and joining symbols only: e.g. Johnson or O'Keefe">
+                </div>
+                <div class="input">
+                    <i class="fas fa-envelope"></i><input id="patientEmail" placeholder="Email" type="email" required class="input" autocomplete="off">
+                </div>
+                <div class="input">
+                    <i class="fas fa-birthday-cake"></i><input id="patientDOB" placeholder="Date of Birth (YYYY-MM-DD)" type="text" required class="input" autocomplete="off">
+                </div>
+                <div class="input">
+                    <i class="fas fa-home"></i><input id="patientAdd" placeholder="Home Address" type="text" required class="input" autocomplete="off">
+                </div>
+                <div class="input">
+                    <i class="fas fa-phone-alt"></i><input id="patientPhone" placeholder="Phone #: XXX-XXX-XXXX" type="text" required class="input" autocomplete="off"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="Phone format: 123-456-7890">
+                </div>
+                <div class="input">
+                    <i class="fas fa-venus-mars"></i><input id="patientGender" placeholder="Gender" type="text" required class="input" list="Gender" autocomplete="off">     
+                        <datalist id="Gender">
+                        <option value="Male">
+                        <option value="Female">
+                        <option value="Other">
+                        </datalist>
+                </div>
+                <div class="input">
+                    <i class="fas fa-file-medical"></i> <input id="patientNum" placeholder="Healthcare # (10 digits)" type="number" min="0" max="9999999999"required class="input" autocomplete="off">
+                </div>
+                <div class="input">
+                    <i class="fas fa-heartbeat"></i> <input id="patientStage" placeholder="Stage of Disease (1-5)" list="stages" type="number" min="1" max="5" required class="input" autocomplete="off">
+                    <datalist id="stages">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                </div>
+                <div class="input">
+                    <i class="fas fa-notes-medical"><input id="patientNotes" placeholder="Additional Notes" type="text" class="input" autocomplete="off">
+                </div>
+                <p class="badInputs" id="badInputs" style="display: none" >Error, check inputs</p>
+                <p class="badInputs" id="badDate" style="display: none" >Date is not formatted correctly</p>
+                <p class="success" id="success" style="display: none" >Successfully added patient!</p>
+              
+                <div class="submit">
+                    <input id="mybtn" class="mybtn" type="submit" value="Submit" style="margin-left: 75px">
+                </div>
+                <!--
+                <div id="alertAddNewPatient" style="display:none;">
+                    Success! Patient added.
+                </div>
+                -->
+            </form>
+          </div>
+        </div>
+    </div>
+        
+    <!-- jsPDF libaray -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+    <!-- Firebase related libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <script>
+
+    // Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB09Qix1d7VyxyS7mze7wc5-a2fnbGJCD8",
+        authDomain: "remedi2.firebaseapp.com",
+        databaseURL: "https://remedi2.firebaseio.com",
+        projectId: "remedi2",
+        storageBucket: "remedi2.appspot.com",
+        messagingSenderId: "253235968752",
+        appId: "1:253235968752:web:46cd5dc2656d69556a2035",
+        measurementId: "G-KVERK2KVV7"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    </script>
+    <script src="dash.js"></script>
+    <!--<script src="analytics.js"></script>-->
+</body>
+</html>
